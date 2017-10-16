@@ -26,3 +26,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.4.1'
+}
