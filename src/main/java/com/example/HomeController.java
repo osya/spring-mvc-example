@@ -16,3 +16,5 @@ public class HomeController {
         return "Hello";
     }
 }
+
+//TODO: Upgrade to JDK 9 after IntelliJ IDEA 2017.3 released
