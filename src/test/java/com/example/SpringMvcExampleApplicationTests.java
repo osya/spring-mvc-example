@@ -11,6 +11,7 @@ public class SpringMvcExampleApplicationTests {
 
 	@Test
 	public void contextLoads() {
+        System.out.println("Test 1 works");
 	}
 
 }
