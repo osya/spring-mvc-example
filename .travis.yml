@@ -3,8 +3,8 @@ language: java
 jdk:
   - oraclejdk8
 
-os:
-  - linux
+before_install:
+  gradle -b wrapper
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
@@ -15,6 +15,5 @@ cache:
     - $HOME/.gradle/wrapper/
 
 script:
-  - gradle wrapper
   - ./gradlew assemble
   - ./gradlew check
