@@ -11,6 +11,8 @@ cache:
     - node
     - node_modules
     - $HOME/.gradle
+before_install:
+  gradle wrapper
 script:
   - chmod +x gradlew
   - ./gradlew clean test
