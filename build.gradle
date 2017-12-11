@@ -35,5 +35,6 @@ dependencies {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.4.1'
+    gradleVersion = '4.2.1'
+    distributionUrl = 'https://services.gradle.org/distributions/gradle-4.2.1-all.zip'
 }
