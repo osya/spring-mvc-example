@@ -17,4 +17,5 @@ public class HomeController {
     }
 }
 
-//TODO: Upgrade to JDK 9
+// TODO: Upgrade to JDK 9
+// TODO: Use Healthcheck & depends_on in Docker Compose

@@ -1,0 +1,13 @@
+version: '2'
+services:
+    springmvcexample-app:
+        image: springmvcexample
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:postgresql://springmvcexample-postgresql:5432/springMVCExample
+        ports:
+            - 8080:8080
+    springmvcexample-postgresql:
+        extends:
+            file: postgresql.yml
+            service: springmvcexample-postgresql

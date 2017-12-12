@@ -1,0 +1,11 @@
+version: '2'
+services:
+    springmvcexample-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/springMVCExample/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=springMVCExample
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
